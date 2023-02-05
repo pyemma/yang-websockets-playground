@@ -121,6 +121,7 @@ async def handler(websocket):
 
 
 async def main():
+  
   loop = asyncio.get_running_loop()
   stop = loop.create_future()
   loop.add_signal_handler(signal.SIGTERM, stop.set_result, None)
