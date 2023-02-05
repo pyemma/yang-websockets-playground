@@ -75,8 +75,8 @@ function initGame(websocket) {
 }
 
 function getWebSocketServer() {
-  if (window.location.host == "aaugustin.github.io") {
-    return "wss://websockets-tutorial.herokuapp.com/";
+  if (window.location.host == "pyemma.github.io") {
+    return "wss://yang-websockets-playground.herokuapp.com/";
   } else if (window.location.host == "localhost:8000"){
     return "ws://localhost:8001/";
   } else {
